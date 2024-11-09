@@ -23,6 +23,8 @@
     "paths": {
       // Helpers
       "@helpers": ["./src/shared/helpers/index.ts"],
+      // Socials
+      "@socials/*": ["./public/socials/*"],
       // Styles
       "@styles/*": ["./src/app/styles/*"]
     },
