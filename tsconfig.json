@@ -15,27 +15,16 @@
     // Language and Environment
     "jsx": "preserve",
     "lib": ["DOM.Iterable", "DOM", "ESNext"],
+    "target": "ESNext",
     // Modules
     "allowImportingTsExtensions": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      // Data
-      "@data": ["./src/shared/data/index.ts"],
       // Helpers
       "@helpers": ["./src/shared/helpers/index.ts"],
-      // Images
-      "@images/*": ["./public/images/*"],
-      // Providers
-      "@providers": ["./src/app/providers/index.ts"],
-      // Socials
-      "@socials/*": ["./public/socials/*"],
       // Styles
-      "@styles/*": ["./src/app/styles/*"],
-      // UI
-      "@ui": ["./src/shared/ui/index.ts"],
-      // Widgets
-      "@widgets": ["./src/widgets/index.ts"]
+      "@styles/*": ["./src/app/styles/*"]
     },
     "resolveJsonModule": true,
     // Projects

@@ -1,25 +1,13 @@
 @use "@styles/abstracts" as *;
 
 :root {
-  // Main Colors
-  --color-primary-dark: #{$color-primary-dark};
-  --color-primary-light: #{$color-primary-light};
+  line-height: 1;
 
-  // Secondary Colors
-  --color-secondary-black: #{$color-secondary-black};
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
 
-  // Gradients
-  --color-primary-light-gradient: #{$color-primary-light-gradient};
+  font-family: "Lucida Sans", sans-serif;
+  font-size: to-rem(16);
 
-  // Box Shadows
-  --default-box-shadow: #{$default-box-shadow};
-
-  // Z Indexes
-  --z-index-1: #{$z-index-1};
-
-  // Border Radiuses
-  --default-border-radius: #{$default-border-radius};
-
-  // Transitions
-  --default-transition: #{$default-transition};
+  -webkit-font-smoothing: antialiased;
 }
