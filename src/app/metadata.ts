@@ -1,14 +1,14 @@
 import { isDevelopment } from '@helpers';
-import socialPreviewImage from '@socials/cover.jpg';
+import socialCoverImage from '@socials/cover.jpg';
 import type { Metadata, Viewport } from 'next';
 
 const title = process.env.NEXT_PUBLIC_DEFAULT_TITLE;
 const description = process.env.NEXT_PUBLIC_DEFAULT_DESCRIPTION;
 const images = [
   {
-    url: socialPreviewImage.src,
-    height: socialPreviewImage.height,
-    width: socialPreviewImage.width,
+    url: socialCoverImage.src,
+    height: socialCoverImage.height,
+    width: socialCoverImage.width,
   },
 ];
 const siteName = title;
@@ -16,6 +16,7 @@ const siteURL = process.env.NEXT_PUBLIC_DEFAULT_URL;
 const author = process.env.NEXT_PUBLIC_AUTHOR_NAME;
 
 const metadata: Metadata = {
+  alternates: { canonical: siteURL },
   applicationName: title,
   appleWebApp: {
     title,
@@ -30,7 +31,6 @@ const metadata: Metadata = {
   description,
   keywords: ['japan', 'mythology', 'bestiary', 'yokai'],
   metadataBase: isDevelopment ? new URL('http://localhost:3000') : new URL(siteURL),
-  publisher: 'Vercel',
   robots: {
     index: true,
     follow: true,
@@ -47,8 +47,10 @@ const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
+    creator: author,
     description,
     images,
+    site: siteURL,
     title,
   },
   icons: {
@@ -76,6 +78,7 @@ const metadata: Metadata = {
 const viewport: Viewport = {
   colorScheme: 'dark',
   themeColor: 'black',
+  userScalable: false,
 };
 
 export { metadata, viewport };
