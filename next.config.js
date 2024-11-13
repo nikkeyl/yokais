@@ -5,7 +5,7 @@ export default defineConfig({
     formats: ['image/webp'],
     remotePatterns: [
       {
-        hostname: 'yokai.vercel.app',
+        hostname: 'yokais.vercel.app',
         pathname: '/images/**',
         protocol: 'https',
       },
