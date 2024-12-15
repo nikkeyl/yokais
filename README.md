@@ -1,3 +1,3 @@
 # Yokai - Bestiary of Japanese spirits and monsters
 
-![Cover](public/github/cover.jpg)
+![Cover](public/socials/cover.jpg)

@@ -1,11 +1,11 @@
 {
-  "background_color": "#000",
+  "background_color": "#00090E",
   "description": "Bestiary of Japanese spirits and monsters",
   "display": "standalone",
-  "name": "Yokai",
-  "short_name": "Yokai",
+  "name": "Yokais",
+  "short_name": "Yokais",
   "start_url": "/",
-  "theme_color": "#000",
+  "theme_color": "#00090E",
   "icons": [
     {
       "sizes": "192x192",
