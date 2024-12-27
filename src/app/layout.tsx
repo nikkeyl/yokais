@@ -1,7 +1,5 @@
 import '@styles/app.scss';
 
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { PropsWithChildren } from 'react';
 
 const RootLayout = (properties: PropsWithChildren) => {
@@ -9,11 +7,7 @@ const RootLayout = (properties: PropsWithChildren) => {
 
   return (
     <html lang='en'>
-      <body>
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
