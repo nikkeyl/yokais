@@ -1,0 +1,13 @@
+@use "@styles/abstracts" as *;
+
+:root {
+  line-height: 1;
+
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+
+  font-family: "Lucida Sans", sans-serif;
+  font-size: to-rem(16);
+
+  -webkit-font-smoothing: antialiased;
+}

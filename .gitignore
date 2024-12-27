@@ -1,5 +1,7 @@
-# Bun
-bun.lockb
-
 # Directories
+.next
 node_modules
+
+# Files
+bun.lockb
+next-env.d.ts

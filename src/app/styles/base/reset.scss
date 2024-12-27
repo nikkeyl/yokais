@@ -1,0 +1,23 @@
+@use "@styles/abstracts" as *;
+
+*,
+*::before,
+*::after {
+  outline: none;
+
+  margin: 0;
+
+  border: 0;
+
+  box-sizing: border-box;
+
+  padding: 0;
+}
+
+html {
+  min-block-size: 100svb;
+
+  overflow: hidden;
+
+  overscroll-behavior: none;
+}
