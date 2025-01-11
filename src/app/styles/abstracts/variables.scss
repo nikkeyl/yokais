@@ -1,1 +1,9 @@
-@use "functions" as *;
+// Main Colors
+$color-primary: #00090e;
+$color-secondary: #f8ebc7;
+$color-accent: #002d4b;
+$color-inverse: #001f34;
+$color-highlight: #db4837;
+
+// Transitions
+$default-transition: 0.3s ease-in-out;
