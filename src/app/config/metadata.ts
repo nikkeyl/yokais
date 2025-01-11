@@ -1,9 +1,9 @@
-import { isDevelopment } from '@helpers';
-import socialCoverImage from '@socials/cover.jpg';
 import type { Metadata, Viewport } from 'next';
 
-const title = process.env.NEXT_PUBLIC_DEFAULT_TITLE;
-const description = process.env.NEXT_PUBLIC_DEFAULT_DESCRIPTION;
+import socialCoverImage from '@/socials/cover.jpg';
+
+const title = 'yokais';
+const description = `${title} — Bestiary of Japanese spirits and monsters`;
 const images = [
   {
     url: socialCoverImage.src,
@@ -12,8 +12,8 @@ const images = [
   },
 ];
 const siteName = title;
-const siteURL = process.env.NEXT_PUBLIC_DEFAULT_URL;
-const author = process.env.NEXT_PUBLIC_AUTHOR_NAME;
+const siteURL = 'https://yokais.vercel.app';
+const author = title;
 
 const metadata: Metadata = {
   alternates: { canonical: siteURL },
@@ -30,7 +30,7 @@ const metadata: Metadata = {
   creator: author,
   description,
   keywords: ['japan', 'mythology', 'bestiary', 'yokai'],
-  metadataBase: isDevelopment ? new URL('http://localhost:3000') : new URL(siteURL),
+  metadataBase: new URL(siteURL),
   robots: {
     index: true,
     follow: true,
@@ -78,7 +78,6 @@ const metadata: Metadata = {
 const viewport: Viewport = {
   colorScheme: 'dark',
   themeColor: 'black',
-  userScalable: false,
 };
 
 export { metadata, viewport };

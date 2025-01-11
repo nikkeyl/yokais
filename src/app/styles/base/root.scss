@@ -1,13 +1,22 @@
 @use "@styles/abstracts" as *;
 
 :root {
+  // Main Colors
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-accent: #{$color-accent};
+  --color-inverse: #{$color-inverse};
+  --color-highlight: #{$color-highlight};
+
+  // Transitions
+  --default-transition: #{$default-transition};
+
   line-height: 1;
 
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
 
   font-family: "Lucida Sans", sans-serif;
-  font-size: to-rem(16);
 
   -webkit-font-smoothing: antialiased;
 }
