@@ -16,9 +16,7 @@ const RootLayout = async (properties: PropsWithChildren) => {
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Wrapper>
-            {children}
-          </Wrapper>
+          <Wrapper>{children}</Wrapper>
         </NextIntlClientProvider>
       </body>
     </html>
