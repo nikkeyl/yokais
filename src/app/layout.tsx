@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import type { PropsWithChildren } from 'react';
 
-import { Wrapper } from '@/ui/wrapper/wrapper';
+// import { Wrapper } from '@/ui/wrapper/wrapper';
 
 const RootLayout = async (properties: PropsWithChildren) => {
   const { children } = properties;
@@ -16,7 +16,7 @@ const RootLayout = async (properties: PropsWithChildren) => {
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Wrapper>{children}</Wrapper>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
