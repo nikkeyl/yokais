@@ -1,4 +1,4 @@
-@use "@styles/abstracts" as *;
+@use "@/styles/abstracts" as *;
 
 :root {
   // Main Colors
@@ -11,12 +11,12 @@
   // Transitions
   --default-transition: #{$default-transition};
 
-  line-height: 1;
+  font-family: "Lucida Sans", sans-serif;
 
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
 
-  font-family: "Lucida Sans", sans-serif;
+  line-height: 1;
 
   -webkit-font-smoothing: antialiased;
 }
